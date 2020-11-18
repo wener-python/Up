@@ -1,0 +1,24 @@
+class Enimals():
+    def __init__(self, rase , name ,old , pol):
+        self.rase = rase
+        self.name = name
+        self.old = old
+        self.pol = pol
+a1 = Enimals("dog", "Felix", 2, "boy")
+a2 = Enimals("cat", "Baron", 2, "boy")
+a3 = Enimals("dog", "Linda", 2 ,"Gerl")
+a4 = Enimals("Vog","Gosha",1,"boy")
+a5 = Enimals("dog","Muhtar",0,"boy")
+a6 = Enimals("cat","Sam",2,"boy")
+for i in [a1,a2,a3,a4,a5,a6]:
+    if i.rase == "cat":
+        print("it`s Cat  " + str(i.__dict__))
+    elif i.rase == "dog":
+        print("It is Dog "+ str(i.__dict__))
+class Rung():
+    def __init__(self,r):
+        self.r = r
+    def s(self):
+        print(self.r *6.28)
+pt1 = Rung(5)
+pt1.s()
